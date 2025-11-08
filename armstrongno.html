@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head><title> Armstronge number</title>
+</head>
+
+<body>
+<script>
+
+var x=prompt ("Enter Number")
+let sum=0;
+var temp=x
+
+while(temp>0)
+{
+
+let y=temp%10;
+sum+=y*y*y;
+temp=parseInt(temp/10);
+}
+
+
+if(sum==x)
+{
+document.write("is armstrong number")
+}
+else{
+document.write("is not armstronge number")
+}
+
+</script>
+</body>
